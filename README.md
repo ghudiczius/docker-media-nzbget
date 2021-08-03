@@ -5,6 +5,15 @@ Simple docker image for NZBGet without any bloat, built on the official AdoptOpe
 ## Usage
 
 ```sh
+docker run --rm registry.gitlab.jmk.hu/media/nzbget:<VERSION> \
+  -p 6789:6789 \
+  -v path/to/config:/config \
+  -v path/to/downloads:/downloads
+```
+
+or
+
+```sh
 docker run --rm ghudiczius/nzbget:<VERSION> \
   -p 6789:6789 \
   -v path/to/config:/config \
