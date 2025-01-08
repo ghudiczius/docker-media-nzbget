@@ -1,6 +1,6 @@
 # NZBGet
 
-Simple docker image for NZBGet without any bloat, built on the official AdoptOpenJDK image. NZBGet runs as user `nzbget` with `uid` and `gid` `1000` and listens on port `6789`.
+Simple docker image for NZBGet without any bloat, built on the official alpine image. NZBGet runs as user `nzbget` with `uid` and `gid` `1000` and listens on port `6789`.
 
 ## Usage
 
