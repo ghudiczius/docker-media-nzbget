@@ -1,0 +1,43 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "commitMessagePrefix": "renovate:",
+  "customManagers": [{
+    "customType": "regex",
+    "datasourceTemplate": "github-releases",
+    "depNameTemplate": "nzbgetcom/nzbget",
+    "extractVersionTemplate": "^v(?<version>.*)$",
+    "fileMatch": [
+      "^.gitlab-ci\\.ya?ml$"
+    ],
+    "matchStrings": [
+      "VERSION: \"(?<currentValue>.*)\""
+    ],
+    "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)$"
+  }],
+  "packageRules": [{
+    "autoApprove": false,
+    "matchUpdateTypes": [
+      "major"
+    ]
+  }, {
+    "automerge": false,
+    "matchUpdateTypes": [
+      "minor"
+    ]
+  }, {
+    "automerge": false,
+    "automergeType": "branch",
+    "matchUpdateTypes": [
+      "patch"
+    ]
+  }, {
+    "ignoreUnstable": false,
+    "matchPackageNames": [
+      "nzbgetcom/nzbget"
+    ],
+    "separateMajorMinor": true,
+    "separateMinorPatch": true,
+    "separateMultipleMajor": true,
+    "separateMultipleMinor": true
+  }]
+}
