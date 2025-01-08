@@ -5,7 +5,7 @@ Simple docker image for NZBGet without any bloat, built on the official alpine i
 ## Usage
 
 ```sh
-docker run --rm registry.gitlab.jmk.hu/media/nzbget:<VERSION> \
+docker run --rm ghudiczius/nzbget:<VERSION> \
   -p 6789:6789 \
   -v path/to/config:/config \
   -v path/to/downloads:/downloads
@@ -14,7 +14,7 @@ docker run --rm registry.gitlab.jmk.hu/media/nzbget:<VERSION> \
 or
 
 ```sh
-docker run --rm ghudiczius/nzbget:<VERSION> \
+docker run --rm registry.gitlab.jmk.hu/media/nzbget:<VERSION> \
   -p 6789:6789 \
   -v path/to/config:/config \
   -v path/to/downloads:/downloads
