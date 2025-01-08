@@ -15,20 +15,14 @@
     "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)$"
   }],
   "packageRules": [{
-    "autoApprove": false,
+    "autoApprove": true,
     "matchUpdateTypes": [
       "major"
     ]
   }, {
-    "automerge": false,
+    "automerge": true,
     "matchUpdateTypes": [
       "minor"
-    ]
-  }, {
-    "automerge": false,
-    "automergeType": "branch",
-    "matchUpdateTypes": [
-      "patch"
     ]
   }, {
     "ignoreUnstable": false,
@@ -36,7 +30,6 @@
       "nzbgetcom/nzbget"
     ],
     "separateMajorMinor": true,
-    "separateMinorPatch": true,
     "separateMultipleMajor": true,
     "separateMultipleMinor": true
   }]
