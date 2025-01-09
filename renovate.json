@@ -25,11 +25,18 @@
       "minor"
     ]
   }, {
+    "automerge": true,
+    "automergeType": "branch",
+    "matchUpdateTypes": [
+      "patch"
+    ]
+  }, {
     "ignoreUnstable": false,
     "matchPackageNames": [
       "nzbgetcom/nzbget"
     ],
     "separateMajorMinor": true,
+    "separateMinorPatch": true,
     "separateMultipleMajor": true,
     "separateMultipleMinor": true
   }]
